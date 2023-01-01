@@ -1,0 +1,73 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["haloo", "hai", "kak?"],
+     "responses": ["hai kami dari perusahaan sss ada yang bisa saya bantu?", "Iya ada yang bisa kami bantu?", "Apakah terdapat kendala dalam produk kami?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "makasih", "makasih banyak kak", "Alhamdulillah", "terima kasih bantuannya"],
+     "responses": ["senang bisa membantu", "kami harap anda bisa kembali berbelanja di kami"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["gimana kak?", "bisa diperjelas masalahnya?", "saya masih belum mengerti"],
+     "context": [""]
+    },
+    {"tag": "trouble",
+     "patterns": ["saya ingin melakukan pengaduan terdapat cacat pada produk saya", "produk yang saya terima kurang ", "produknya mengalami cacat", "saya menerima produk cacat", "saya menerima barang dengan kondisi kurang baik"],
+     "responses": ["untuk komplain produk, silahkan berikan video pembukaan paket untuk kami kroscek", "Baik, silahkan berikan video pembukaan paket"],
+     "context": [""]
+    },
+    {"tag": "refund",
+     "patterns": ["saya ingin pengajuan dana", "saya ingin refund", "refund", "pengembalian dana", "bagaimana cara pengembalian dana" ],
+     "responses": ["untuk komplain produk, silahkan berikan video pembukaan paket untuk kami krosceke"],
+     "context": [""]
+    },
+    {"tag": "poisoning",
+     "patterns": ["keracunan", "saya mau komplain keracunan", "keluarga saya keracunan", "saya mau komplain keluarga saya keracunan", "tanggung jawab keluarga saya keracunan" ],
+     "responses": ["Baik, silahkan hubungi nomor yang tertera diproduk agar kami bisa menginvestigasi lebih lanjut"],
+     "context": [""]
+    },
+    {"tag": "blood_pressure_search",
+     "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
+     "responses": ["Please provide Patient ID", "Patient ID?"],
+     "context": ["search_blood_pressure_by_patient_id"]
+    },
+    {"tag": "search_blood_pressure_by_patient_id",
+     "patterns": [],
+     "responses": ["Loading Blood pressure result for Patient"],
+     "context": [""]
+    },
+    {"tag": "pharmacy_search",
+     "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+     "responses": ["Please provide pharmacy name"],
+     "context": ["search_pharmacy_by_name"]
+    },
+    {"tag": "search_pharmacy_by_name",
+     "patterns": [],
+     "responses": ["Loading pharmacy details"],
+     "context": [""]
+    },
+    {"tag": "hospital_search",
+     "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+     "responses": ["Please provide hospital name or location"],
+     "context": ["search_hospital_by_params"]
+    },
+    {"tag": "search_hospital_by_params",
+     "patterns": [],
+     "responses": ["Please provide hospital type"],
+     "context": ["search_hospital_by_type"]
+    },
+    {"tag": "search_hospital_by_type",
+     "patterns": [],
+     "responses": ["Loading hospital details"],
+     "context": [""]
+    }
+]
+}
